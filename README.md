@@ -17,9 +17,9 @@ Interact with **LLMs** (Large Language Models, an interactable text-based AI) in
    - look into workspace memory and manage them conveniently
    - get warned if exceeding context window
 3. Chat in an "**adjustable**" way means:
-   - adjust how "memory" is derived in a workspace. [[1]](#[1])
-   - adjust response length. [[2]](#[2])
-   - adjust numerous request parameters, like temperature, top K, safety settings for a request/workspace/folder/conversation. [[3]](#[3])
+   - adjust how "memory" is derived in a workspace. [[1]](#1)
+   - adjust response length. [[2]](#2)
+   - adjust numerous request parameters, like temperature, top K, safety settings for a request/workspace/folder/conversation. [[3]](#3)
 4. Chat in a "**manageable**" way means:
    - You can create folders inside workspace, folders inside folders to contain multiple chats; a disposable area can also be selected for a quick reference chat that doesn't need to be stored.
    - Your chat history is stored locally, so you don't have to experience the lag of navigating between different chats in most webapps.
@@ -69,7 +69,7 @@ Interact with **LLMs** (Large Language Models, an interactable text-based AI) in
 
 
 
-## Detailed Information
+## Additional Information
 
 ##### [1]
 
