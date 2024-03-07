@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import SubmitButton from './components/SubmitButton';
+import OpenAIComponent from './services/API_Openai.js';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <OpenAIComponent></OpenAIComponent>
       </header>
+      <SubmitButton></SubmitButton>
     </div>
   );
 }
