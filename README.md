@@ -1,5 +1,4 @@
-# Project HILLM (Human Interface of Large Language Models)
-
+# LLM Browser
 
 
 ## Main Goal
@@ -7,17 +6,16 @@
 Interact with **LLMs** (Large Language Models, an interactable text-based AI) in a **Open, Adjustable, Manageable** way.
 
 
-
 ## Key Features
 
 1. Able to configure different **workspaces** where the model remembers (derives information) from other conversations within the same workspace.
-2. Chat in an "**open**" way means:
+2. Chat in an "**open**" way:
    - real-time token count
-   - preview full request fed into the model, including various parameters
-   - look into workspace memory and manage them conveniently
-   - get warned if exceeding context window
+   - preview full request fed into the model, including various parameters, like *"Safety Settings"* for google api.
+   - look into workspace memory (what AI knows about you) and manage them conveniently
+   - get warned if the conversation exceeds context window limits for the API.
 3. Chat in an "**adjustable**" way means:
-   - adjust how "memory" is derived in a workspace. [[1]](#1)
+   - adjust how "memory" is derived in a workspace. There are several options available, like being a personal friend, or being a task taker, etc. [[1]](#1)
    - adjust response length. [[2]](#2)
    - adjust numerous request parameters, like temperature, top K, safety settings for a request/workspace/folder/conversation. [[3]](#3)
 4. Chat in a "**manageable**" way means:
