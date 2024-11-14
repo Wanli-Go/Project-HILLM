@@ -1,8 +1,12 @@
 import React, { useRef, useState } from "react";
 import request from "../../services/api/simple-request";
+import LoadingVisual from "../loading";
+
+import "./index.css"
 
 const SimpleChatComponent: React.FC = () => {
   const inputRef = useRef<HTMLDivElement>(null);
+  const [isLoading, setLoading] = useState<boolean>(false);
   const [response, setResponse] = useState("");
 
   const handleSubmit = async (e: any) => {
@@ -18,13 +22,14 @@ const SimpleChatComponent: React.FC = () => {
       setResponse("Error");
       return;
     }
-
+    setLoading(true);
     const result = await request(inputRef.current?.innerText ?? ' ');
     setResponse(result);
+    setLoading(false);
   };
 
   return (
-    <div>
+    <div className="chat-container">
       <div
         contentEditable
         ref={inputRef}
@@ -32,6 +37,9 @@ const SimpleChatComponent: React.FC = () => {
       <button
         onClick={handleSubmit}
       >Send</button>
+      {
+        isLoading && <LoadingVisual/>
+      }
       <div>
         <p>Response:</p>
         <p>{response}</p>
